@@ -1,0 +1,18 @@
+CARA MEMBUAT APK DARI HP (TANPA PC)
+
+PENTING: ZIP ini belum berisi APK. Workflow GitHub Actions akan membangun APK secara online.
+
+1. Buat akun / masuk ke https://github.com lewat browser HP.
+2. Buat repository baru. Nama: OferoChargerOffline. Pilih Private atau Public.
+3. Ekstrak ZIP ini di HP.
+4. Upload SEMUA ISI folder OferoChargerOffline ke repository GitHub (termasuk folder tersembunyi .github/workflows/build-apk.yml). Pastikan file build.gradle, settings.gradle, folder app, dan folder .github ada di akar repository, bukan berada satu folder tambahan.
+5. Setelah upload selesai, buka tab Actions di repository.
+6. Pilih workflow "Build Ofero Charger APK", tekan Run workflow, lalu Run workflow lagi.
+7. Tunggu sampai proses selesai dengan tanda centang hijau.
+8. Buka hasil run tersebut, scroll ke bagian Artifacts, lalu download "OferoChargerOffline-APK".
+9. Ekstrak ZIP artifact yang diunduh. Di dalamnya ada app-debug.apk.
+10. Ketuk app-debug.apk untuk instal. Jika diminta, izinkan browser/File Manager memasang aplikasi dari sumber ini.
+
+Jika tab Actions tidak muncul: buka Settings > Actions > General, pastikan Actions diizinkan. Untuk repository baru, push/upload file ke branch main juga akan memicu build otomatis.
+
+APK yang dihasilkan adalah debug APK untuk instalasi pribadi, bukan APK Play Store.
