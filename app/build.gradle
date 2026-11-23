@@ -1,0 +1,6 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.rav.oferocharger'
+    compileSdk 35
+    defaultConfig { applicationId 'com.rav.oferocharger'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0' }
+}
